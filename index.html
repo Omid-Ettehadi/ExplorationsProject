@@ -5,9 +5,50 @@
 		<link rel="stylesheet" type="text/css" href="CSS/style.css">
 		<!-- Connecting to javascript library -->
 		<script src="Libraries/p5/p5.min.js"></script>
+		
+		<title> Welcome </title>
+
 	</head>
 	
 	<body>
-		<div> Welcome Page! </div>
+		<script>
+			var img = [];
+			var i = 0;
+			
+			function preload(){
+			  img[0] = loadImage("images/temp1.jpg");
+			  img[1] =  loadImage("images/temp2.jpg");
+			}
+			 
+			function setup(){
+			  createCanvas(2500,2500); 
+			}
+			 
+			function draw(){
+				function slide(){
+					i = i + 1;
+					if (i == img.length){
+						i = i - img.length;
+					}
+				}			
+			  image(img[i],50,50,width,height);
+			  //setTimerout(slide(),300);
+			}
+			 
+			function mouseReleased(){
+			 
+				//ONLY if click registered inside image
+				if(mouseX>50 && mouseY>50){
+					  i = i + 1;
+					  if (i == img.length){
+						  i = i - img.length;
+					  }
+				}          
+			}
+			
+		
+			
+			
+		</script>		
 	</body>
 </html>
