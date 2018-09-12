@@ -21,5 +21,16 @@ the work of art. This allows the user to get the full
 experience in shopping and helps the artist to better 
 communicate the meaning of their work.
 
+This project involves creation of a website where users can
+submit their work, and purhcase other's work. It is a platform to
+share your designs while focusing on giving the full experience
+to the viewers.
+
 Uses:
-- p5js
+	- p5js
+
+Contributers:
+	- Omid Ettehadi
+	
+If you have any questions regarding the project, feel free to email me:
+me@omidettehadi.com
