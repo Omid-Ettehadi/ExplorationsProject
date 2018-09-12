@@ -37,6 +37,10 @@ Contributers:
 	- Omid Ettehadi
     
 Refrences:
+    -https://p5js.org/libraries/
+    -https://css-tricks.com/
+    -https://forum.processing.org/two/categories/p5-js
+    
 	
 If you have any questions regarding the project, feel free to email me:
 me@omidettehadi.com
