@@ -1,19 +1,16 @@
 <html>
 	<head>
-		<!-- General Style of the page -->
 		<!-- Connecting to css file for styling -->
 		<link rel="stylesheet" type="text/css" href="CSS/style.css">
 		<!-- Connecting to javascript library -->
 		<script src="Libraries/p5/p5.min.js"></script>
-		
+		<!-- Title -->
 		<title> Welcome </title>
-
 	</head>
-	
 	<body>
 		<script>
 			var img = [];
-			var i,j,k;
+			var i,t;
 			
 			function preload(){
 				img[0] = loadImage("images/temp1.jpg");
@@ -22,32 +19,28 @@
 			 
 			function setup(){
 				i = 0;
-				k = second();
-				j = 0;
+				t = second();
 				createCanvas(2500,2500); 
 			}
 			 
 			function draw(){
-				image(img[i],0,0,width,height);
-				j = second();
 				function slide(){	
-					if (j - k > 5){
+					if (second() - t > 5 || t - second() > 59-5 ){
 						i = i + 1;
-						k = j;
+						t = second();
 						if (i == img.length){
 							i = i - img.length;
 						}
 					}					
 				}
+				
 				slide();
+				image(img[i],0,0,width,height);
 			}
-			
-			
-			
-			//setInterval(slide(),1000);
-					
-			
+		</script>
 
-		</script>		
+		<div> <a href="login.html"> Login  </a> </div>
+		<div> <a href="signup.html"> Create an account  </a> </div>
+		
 	</body>
 </html>
