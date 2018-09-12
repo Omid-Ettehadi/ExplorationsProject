@@ -13,42 +13,41 @@
 	<body>
 		<script>
 			var img = [];
-			var i = 0;
+			var i,j,k;
 			
 			function preload(){
-			  img[0] = loadImage("images/temp1.jpg");
-			  img[1] =  loadImage("images/temp2.jpg");
+				img[0] = loadImage("images/temp1.jpg");
+				img[1] = loadImage("images/temp2.jpg");
 			}
 			 
 			function setup(){
-			  createCanvas(2500,2500); 
+				i = 0;
+				k = second();
+				j = 0;
+				createCanvas(2500,2500); 
 			}
 			 
 			function draw(){
-				function slide(){
-					i = i + 1;
-					if (i == img.length){
-						i = i - img.length;
-					}
-				}			
-			  image(img[i],50,50,width,height);
-			  //setTimerout(slide(),300);
-			}
-			 
-			function mouseReleased(){
-			 
-				//ONLY if click registered inside image
-				if(mouseX>50 && mouseY>50){
-					  i = i + 1;
-					  if (i == img.length){
-						  i = i - img.length;
-					  }
-				}          
+				image(img[i],0,0,width,height);
+				j = second();
+				function slide(){	
+					if (j - k > 5){
+						i = i + 1;
+						k = j;
+						if (i == img.length){
+							i = i - img.length;
+						}
+					}					
+				}
+				slide();
 			}
 			
-		
 			
 			
+			//setInterval(slide(),1000);
+					
+			
+
 		</script>		
 	</body>
 </html>
