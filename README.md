@@ -26,11 +26,17 @@ submit their work, and purhcase other's work. It is a platform to
 share your designs while focusing on giving the full experience
 to the viewers.
 
+Status:
+Currently The welcome page includes a slideshow with links that can guide you to the login 
+and sign up pages. 
+
 Uses:
 	- p5js
 
 Contributers:
 	- Omid Ettehadi
+    
+Refrences:
 	
 If you have any questions regarding the project, feel free to email me:
 me@omidettehadi.com

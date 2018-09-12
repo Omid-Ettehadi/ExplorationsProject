@@ -1,5 +1,6 @@
-html{
+html {
 	background:#FFFFFF url("../images/background.jpg") repeat center top scroll;
+    font-family: sans-serif;
 }
 
 canvas {
@@ -17,9 +18,5 @@ canvas {
 }
 
 body {
-	/*background-color:white;*/
-}
-
-div {
-	/*background-color:cornflowerblue;*/
+	
 }
