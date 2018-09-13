@@ -1,42 +1,20 @@
 <html>
 	<head>
-		<!-- Connecting to css file for styling -->
-		<link rel="stylesheet" type="text/css" href="CSS/style.css">
-		<!-- Connecting to javascript library -->
-		<script src="Libraries/p5/p5.min.js"></script>
+        <!-- Connecting to css file -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Connecting to javascript library -->
+		<script src="libraries/p5/p5.min.js"></script>
+        <script src="libraries/p5/addons/p5.dom.min.js"></script>
+        <!-- Connecting to java file -->
+        <script src="javascript/slideshow.js"></script>
 		<!-- Title -->
 		<title> Welcome </title>
 	</head>
 	<body>
-        <script>
-            var img = [];
-            var i,t;
-            function preload(){
-                    img[0] = loadImage("images/temp1.jpg");
-                    img[1] = loadImage("images/temp2.jpg");
-            }
-            function setup(){
-                i = 0;
-                t = second();
-                function slide(){	
-                    if (second() - t > 5 || t - second() > 59-5 ){
-                        i = i + 1;
-                        t = second();
-                        if (i == img.length){
-                            i = i - img.length;
-                        }
-                    }					
-                }
-                slide();
-                //createCanvas(1000,1000);
-                //image(img[i],0,0,1000,1000);    
-            }
-        </script>
-    
         <div>
+            <div id="slideshow-holder"></div>
             <a id="login" href="html/login.html"><button> Login </button></a>
             <a id="signup" href="html/signup.html"><button>Creat an acount</button></a>
-        </div>
-                
+        </div>  
 	</body>
 </html>
