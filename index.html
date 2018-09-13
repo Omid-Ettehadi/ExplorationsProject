@@ -8,39 +8,35 @@
 		<title> Welcome </title>
 	</head>
 	<body>
-		<script>
-			var img = [];
-			var i,t;
-			
-			function preload(){
-				img[0] = loadImage("images/temp1.jpg");
-				img[1] = loadImage("images/temp2.jpg");
-			}
-			 
-			function setup(){
-				i = 0;
-				t = second();
-				createCanvas(1000,1000); 
-			}
-			 
-			function draw(){
-				function slide(){	
-					if (second() - t > 5 || t - second() > 59-5 ){
-						i = i + 1;
-						t = second();
-						if (i == img.length){
-							i = i - img.length;
-						}
-					}					
-				}
-				
-				slide();
-				image(img[i],0,0,width,height);
-			}
-		</script>
-
-		<div> <a href="login.html"> Login  </a> </div>
-		<div> <a href="signup.html"> Create an account  </a> </div>
-		
+        <script>
+            var img = [];
+            var i,t;
+            function preload(){
+                    img[0] = loadImage("images/temp1.jpg");
+                    img[1] = loadImage("images/temp2.jpg");
+            }
+            function setup(){
+                i = 0;
+                t = second();
+                function slide(){	
+                    if (second() - t > 5 || t - second() > 59-5 ){
+                        i = i + 1;
+                        t = second();
+                        if (i == img.length){
+                            i = i - img.length;
+                        }
+                    }					
+                }
+                slide();
+                //createCanvas(1000,1000);
+                //image(img[i],0,0,1000,1000);    
+            }
+        </script>
+    
+        <div>
+            <a id="login" href="html/login.html"><button> Login </button></a>
+            <a id="signup" href="html/signup.html"><button>Creat an acount</button></a>
+        </div>
+                
 	</body>
 </html>
