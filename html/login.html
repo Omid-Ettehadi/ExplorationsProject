@@ -1,13 +1,20 @@
 <html>
 	<head>
-		<!-- General Style of the page -->
-		<!-- Connecting to css file for styling -->
-		<link rel="stylesheet" type="text/css" href="CSS/style.css">
-		<!-- Connecting to javascript library -->
-		<script src="Libraries/p5/p5.min.js"></script>
+		<!-- Connecting to css file -->
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- Connecting to javascript library -->
+		<script src="../libraries/p5/p5.min.js"></script>
+		<!-- Title -->
+		<title> Login </title>
 	</head>
-	
 	<body>
-		<div> Login Page </div>
+        <div class="form">
+            <form class="login-form">
+                <input type="text" placeholder="Username"/>
+                <input type="password" placeholder="Password"/>
+                <a href="../html/homepage.html"><button type="button">Login</button></a>
+                <div id="notregistered">Not registered? <a href="../html/signup.html">Create an account</a></div>
+            </form>
+        </div>
 	</body>
 </html>
