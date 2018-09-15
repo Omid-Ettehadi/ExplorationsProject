@@ -12,15 +12,15 @@ function setup(){
     canvas.parent('slideshow-holder');
 }
 function draw(){
-    function slide(){	
-        if (second() - t > 4 || t - second() > 59-4 ){
-            i = i + 1;
-            t = second();
-            if (i == img.length){
-                i = i - img.length;
-            }
-        }				
-    }
     slide();
     image(img[i],0,0,800,800);  
+}
+function slide(){	
+    if (second() - t > 4 || t - second() > 59-4 ){
+        i = i + 1;
+        t = second();
+        if (i == img.length){
+            i = i - img.length;
+        }
+    }				
 }
