@@ -19,6 +19,28 @@ body {
     margin: 0 0 0 0;
     justify-content: center;
 }
+footer {
+    opacity: 0.8;
+    height: 100px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: #FFFFFF;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-top: 3px solid;
+}
+p {
+    margin: 0 0 0 0;
+    padding: 25px;
+    font-family: RobotoLight;
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+}
 .mainSegment {
     position: relative;
     top: 0px;
@@ -137,7 +159,7 @@ canvas {
 .search-form {
     position: relative;
     top: 25px;
-    left: 0%;
+    left: 25%;
     z-index: 1;
     background: #FFFFFF;
     max-width: 400px;
