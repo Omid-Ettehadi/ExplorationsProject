@@ -1,8 +1,9 @@
- @font-face { font-family: Roboto; src: url('../css/fonts/Roboto-Light.ttf'); } 
+ @font-face { font-family: RobotoLight; src: url('../css/fonts/Roboto-Light.ttf'); }
+@font-face { font-family: Roboto; src: url('../css/fonts/Roboto-BoldCondensed.ttf'); } 
 
 html {
-	background:#FFFFFF url("../images/background.jpg") repeat center top scroll;
-    font-family: Roboto, sans-serif;
+	
+    font-family: RobotoLight, sans-serif;
 }
 header {
     background: white;
@@ -11,8 +12,20 @@ header {
     height: 100px;
 }
 body {
+    background:#FFFFFF url("../images/background.jpg") repeat center top scroll;
     margin: 0 0 0 0;
     justify-content: center;
+}
+.mainSegment {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: #FFFFFF;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 div {
 
@@ -27,15 +40,19 @@ canvas {
     left: 0%;
     display: block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
+/* Buttons */
 .button {
+    font-family: Roboto;
     display: block;
     background: black;
     width : 200px;
     height : 50px;
     margin : 25px auto;
+    border: 1px solid;
+    border-color: white;
     overflow: hidden;
     text-align: center;
     transition : .2s;
@@ -64,7 +81,8 @@ canvas {
     color : black;
     text-decoration:none;
 }
-.button:hover .buttonSlide{ /*When hovering over .button change .buttonSlide*/
+/* When hovering over .button change theses */
+.button:hover .buttonSlide{
   left: -130px;
 }
 .button:hover .btnText{ /*When hovering over .button change .btnText*/
@@ -74,7 +92,7 @@ canvas {
   box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
 }
 
-
+/* Form */
 .form {
     position: relative;
     top: 100px;
@@ -111,6 +129,33 @@ canvas {
     color: #b3b3b3;
     font-size: 12px;
 }
+
+.search-form {
+    position: relative;
+    top: 25px;
+    left: 0%;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 400px;
+    height: 40px;
+    margin: 20px auto 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.search-form input {
+    position: relative;
+    top:0;
+    left:0;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 0 0;
+    padding: 15px;
+    font-size: 12px;
+}
+
 
 /* Navigation bar */
 .topnav {
@@ -167,7 +212,6 @@ canvas {
     margin-right: 16px;
     font-size: 17px;
 }
-
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally 
 @media screen and (max-width: 800px) {
 
