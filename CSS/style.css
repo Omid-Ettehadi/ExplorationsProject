@@ -41,6 +41,23 @@ p {
     text-align: justify;
     text-justify: inter-word;
 }
+u1 {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 10px solid;
+    background: white;
+    margin: 45px 5px 0 0px ;
+}
+u2 {
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    border: 10px solid;
+    background: white;
+    margin: 45px 5px 0 0px ;
+    text-align: left;
+}
 .mainSegment {
     position: relative;
     top: 0px;
@@ -239,4 +256,21 @@ canvas {
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
+}
+
+/* Picture */
+img.displaypic{
+    object-fit: contain;
+    width:150px;
+    height:150px;
+    margin: 0 0 0 0;
+    padding: 25px 25px 25px 25px;
+}
+img.profilepic{
+    object-fit: contain;
+    width:400px;
+    height:400px;
+    margin: 0 0 0 0;
+    padding: 25px 25px 25px 25px;
+    
 }

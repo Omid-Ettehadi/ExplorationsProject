@@ -24,11 +24,11 @@ function draw(){
     var width = parseInt(img[i].width);
     var height = parseInt(img[i].height);
     
-    if(width > 800){
-        width = 800;
+    if(width > 750){
+        width = 750;
     }
-    if(height > 800){
-        height = 800;
+    if(height > 750){
+        height = 750;
     }
     
     var posX = (800 - width)/2;
