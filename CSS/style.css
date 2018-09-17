@@ -81,6 +81,7 @@ canvas {
     display: block;
     text-align: center;
     margin-top: 20px;
+    object-fit: contain;
 }
 
 /* Buttons */
